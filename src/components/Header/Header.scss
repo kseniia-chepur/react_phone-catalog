@@ -1,0 +1,51 @@
+@import "../../style/main.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 24px;
+
+  &__top {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__service-icons {
+    display: flex;
+    gap: 48px;
+  }
+}
+
+.nav {
+  margin-left: 64px;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 64px;
+  }
+
+  &__link {
+    font-family: "Mont-Bold", sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $primary-gray;
+    padding: 10px;
+    transition: all $effect-duration ease;
+
+    &:hover,
+    &:active {
+      color: $secondary-gray;
+    }
+  }
+}

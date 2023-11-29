@@ -1,1 +1,22 @@
-// not empty
+@import "./style/main.scss";
+
+// @font-face {
+//   font-family: "Mont-Regular";
+//   src: url("./assets/fonts/Mont-Regular.otf");
+// }
+
+// @font-face {
+//   font-family: "Mont-Bold";
+//   src: url("./assets/fonts/Mont-Bold.otf");
+// }
+
+html {
+  font-family: "Mont-Regular", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
