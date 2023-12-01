@@ -4,8 +4,8 @@ import { Icons } from '../../assets/icons';
 
 export const Header: React.FC = () => {
   return (
-    <header className="header">
-      <div className="header__top">
+    <header className="header" id="back-to-top">
+      <div className="header__left-side-content">
         <Link to="/" className="logo__link"><Icons.Logo /></Link>
         <nav className="header__nav nav">
           <ul className="nav__list">
@@ -33,10 +33,13 @@ export const Header: React.FC = () => {
           </ul>
         </nav>
       </div>
-      <div className="header__service-icons service-icons">
-        <Link to="/"><Icons.Farourites /></Link>
-        <Link to="/"><Icons.Cart /></Link>
-
+      <div className="header__service-icons">
+        <div className="header__service-icons-content">
+          <Link to="/"><Icons.Farourites /></Link>
+        </div>
+        <div className="header__service-icons-content">
+          <Link to="/"><Icons.Cart /></Link>
+        </div>
       </div>
     </header>
   );

@@ -1,0 +1,68 @@
+@mixin hover($property, $toValue) {
+  transition: #{$property} $effect-duration ease;
+  &:hover {
+    $property: $toValue;
+  }
+}
+
+@mixin onTablet {
+  @media(max-width: $tablet-max-width) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media(max-width: $mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin navContent {
+  .nav {
+    &__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      gap: 64px;
+
+      @include onTablet {
+        gap: 32px;
+      }
+
+      @include onMobile{
+        gap: 20px;
+      }
+    }
+    &__link {
+      font-family: "Mont-Bold", sans-serif;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: $secondary-gray;
+      padding-block: 27px;
+      position: relative;
+
+      @include onMobile{
+        font-size: 10px;
+      }
+
+       &:hover {
+        color: $primary-gray;
+
+        &:after {
+          display: block;
+          content: "";
+          background-color: $primary-gray;
+          height: 3px;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          transition: all $effect-duration ease;
+        }
+      }
+    }
+  }
+}

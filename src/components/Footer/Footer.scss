@@ -1,0 +1,27 @@
+@import "../../style/main.scss";
+
+@include navContent;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 96px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 0 0 $light-gray;
+
+  &__back-to-top{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__back-to-top-link {
+    font-family: "Mont-SemiBold";
+    text-decoration: none;
+    color: $secondary-gray;
+    font-size: 12px;
+  }
+}

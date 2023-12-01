@@ -26,6 +26,5 @@ export const Cart = () => {
         fill="#313237"
       />
     </svg>
-
   );
 };
