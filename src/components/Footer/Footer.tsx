@@ -9,11 +9,16 @@ export const Footer: React.FC = () => {
       <nav className="footer__nav nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <NavLink to="/github" className="nav__link">
+            <NavLink
+              to="https://github.com/kseniia-chepur/react_phone-catalog"
+              target="_blank"
+              className="nav__link"
+            >
               Github
             </NavLink>
           </li>
           <li className="nav__item">
+
             <NavLink to="/contacts" className="nav__link">
               Contacts
             </NavLink>
